@@ -1,0 +1,29 @@
+.pad-left {
+    padding-left: 80px;
+}
+
+ul#nav-mobile li {
+    border-bottom: 1px solid #ddd;
+    padding: 0 15px;
+}
+
+li.logo {
+    height: 64px;
+    line-height: 3;
+    padding: 0 15px;
+}
+
+li.logo a {
+    font-size: 36px;
+    line-height: 1.7!important;
+}
+
+ul#nav-mobile li a {
+    padding: 0 0;
+    height: 45px;
+    line-height: 3;
+}
+
+.text-center {
+    text-align: center;
+}
