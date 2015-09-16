@@ -10,134 +10,103 @@
 
 <body>
     <header>
-        <nav class="top-nav">
-            <div class="container">
-                <div class="nav-wrapper pad-left"><a class="page-title">Table</a></div>
-            </div>
-        </nav>
+        <div class="navbar-fixed">
+            <nav class="top-nav">
+                <div class="row">
+                    <div class="col s12 search">
+                        <form>
+                            <div class=logo>
+                                <a id="logo-container" href="#" class="brand-logo text-center">Wohlig</a>
+                            </div>
+                            <div class="input-field col s4 offset-s7">
+                                <input id="icon_prefix" type="search" class="validate " placeholder="Search">
+                            </div>
+<!--                            <img src="img/1.jpg" alt="" class="circle user">-->
+                            <a class="waves-effect waves-light btn logout-btn">logout</a>
+                        </form>
+
+                    </div>
+                    </div>
+            </nav>
+        </div>
         <div class="container"><a href="#" data-activates="nav-mobile" class="button-collapse top-nav full hide-on-large-only"><i class="mdi-navigation-menu"></i></a></div>
         <ul id="nav-mobile" class="side-nav fixed" style="left: 0px;">
-            <li class="logo">
+            <li>
                 <a id="logo-container" href="" class="brand-logo text-center">
                 Wohlig
                 </a>
             </li>
-            <li class="bold"><a href="" class="waves-effect waves-teal">Dashboard</a></li>
-            <li class="bold"><a href="" class="waves-effect waves-teal">Form</a></li>
-            <li class="bold"><a href="" class="waves-effect waves-teal">Table</a></li>
+            <li class="bold active"><a href="index.html" class="waves-effect waves-teal"><i class="mdi-action-home"></i>  Home</a></li>
+            <li class="bold"><a href="table.html" class="waves-effect waves-teal"><i class="mdi-action-home"></i>  Users</a></li>
+            <li class="bold"><a href="form.html" class="waves-effect waves-teal"><i class="mdi-action-home"></i>  Form</a></li>
         </ul>
     </header>
-    <div class="row">
-        <div class="col s9 offset-s3">
-            <div class="col s12">
-                <table class="hoverable">
-                    <thead>
-                        <tr>
-                            <th data-field="id">Name</th>
-                            <th data-field="name">Item Name</th>
-                            <th data-field="price">Item Price</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Alvin</td>
-                            <td>Eclair</td>
-                            <td>$0.87</td>
-                        </tr>
-                        <tr>
-                            <td>Alan</td>
-                            <td>Jellybean</td>
-                            <td>$3.76</td>
-                        </tr>
-                        <tr>
-                            <td>Jonathan</td>
-                            <td>Lollipop</td>
-                            <td>$7.00</td>
-                        </tr>
-                        <tr>
-                            <td>Shannon</td>
-                            <td>KitKat</td>
-                            <td>$9.99</td>
-                        </tr>
-                    </tbody>
-                </table>
+    <!-- Body starts -->
+        <div class="row dash-row">
+        <div class="col s2 offset-s2">
+         
+          <div class="card red darken-1 mar-left-30 ">
+            <div class="card-content white-text text-center">
+                 <i class="large mdi-action-favorite-outline block"></i>
+                <span class="card-title">478 Sales</span>
             </div>
-            <div id="bordered" class="section scrollspy">
-                <div class="row">
-                    <div class="col s12">
-                        <table class="bordered">
-                            <thead>
-                                <tr>
-                                    <th data-field="id">Name</th>
-                                    <th data-field="name">Item Name</th>
-                                    <th data-field="price">Item Price</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>Alvin</td>
-                                    <td>Eclair</td>
-                                    <td>$0.87</td>
-                                </tr>
-                                <tr>
-                                    <td>Alan</td>
-                                    <td>Jellybean</td>
-                                    <td>$3.76</td>
-                                </tr>
-                                <tr>
-                                    <td>Jonathan</td>
-                                    <td>Lollipop</td>
-                                    <td>$7.00</td>
-                                </tr>
-                                <tr>
-                                    <td>Shannon</td>
-                                    <td>KitKat</td>
-                                    <td>$9.99</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-            </div>
-            <ul class="pagination">
-<!--                <li class="disabled"><a href="#!"><i class="material-icons"></i></a></li>-->
-                <li class="active"><a href="#!">1</a></li>
-                <li class="waves-effect"><a href="#!">2</a></li>
-                <li class="waves-effect"><a href="#!">3</a></li>
-                <li class="waves-effect"><a href="#!">4</a></li>
-                <li class="waves-effect"><a href="#!">5</a></li>
-<!--                <li class="waves-effect"><a href="#!"><i class="material-icons">chevron_right</i></a></li>-->
-            </ul>
-
-            <div class="row">
-                <form class="col s12">
-                    <div class="row">
-                        <div class="input-field col s12">
-                            <input id="email" type="email" class="validate">
-                            <label for="email" data-error="wrong" data-success="right">Email</label>
-                        </div>
-                        <div class="input-field col s12">
-                            <input id="email" type="text" class="validate">
-                            <label for="text" data-error="wrong" data-success="right">Usename</label>
-                        </div>
-                        <div class="input-field col s12">
-                            <input id="email" type="password" class="validate">
-                            <label for="email" data-error="wrong" data-success="right"> Password</label>
-                        </div>
-                    </div>
-                </form>
-                <a class="waves-effect waves-light btn">Stuff</a>
-                <a class="waves-effect waves-light btn">button</a>
-                <a class="waves-effect waves-light btn">button</a>
-            </div>
-
+          </div>
+          
         </div>
-    </div>
+        
+        <div class="col s2">
+         
+          <div class="card green darken-1 mar-left-30 ">
+            <div class="card-content white-text text-center">
+                 <i class="large mdi-action-account-child block"></i>
+                <span class="card-title">478 Users</span>
+            </div>
+          </div>
+          
+        </div>
+        
+        <div class="col s2">
+         
+          <div class="card purple darken-1 mar-left-30 ">
+            <div class="card-content white-text text-center">
+                 <i class="large mdi-action-account-child block"></i>
+                <span class="card-title">478 Users</span>
+            </div>
+          </div>
+          
+        </div>
+        
+        
+        <div class="col s2">
+         
+          <div class="card pink darken-1 mar-left-30 ">
+            <div class="card-content white-text text-center">
+                 <i class="large mdi-action-favorite-outline block"></i>
+                <span class="card-title">478 Sales</span>
+            </div>
+          </div>
+          
+        </div>
+        
+        <div class="col s2">
+         
+          <div class="card navy-blue darken-1 mar-left-30 ">
+            <div class="card-content white-text text-center">
+                 <i class="large mdi-action-favorite-outline block"></i>
+                <span class="card-title">478 Sales</span>
+            </div>
+          </div>
+          
+        </div>
+        
+      </div>
+    
+    <!-- Body Ends -->
     <footer class="page-footer">
         <div class="footer-copyright">
             <div class="">
-                <div class="row">
-                    <div class="col s9 offset-s3">
+                <div class="row pad-left-15">
+                    <div class="col s12">
                         &copy; 2015 Copyright Text
                         <a class="grey-text text-lighten-4 right" href="#!">Wohlig Technonlogy</a>
                     </div>
