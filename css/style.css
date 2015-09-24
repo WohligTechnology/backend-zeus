@@ -98,6 +98,7 @@ footer.page-footer {
 
 input[type="search"] {
 	/*    background-color: rgba(255, 255, 255, 0.3);*/
+	border-radius: 0px;
 	background-color: #fff;
 	border-radius: 3px;
 	padding-left: 0;
@@ -107,6 +108,8 @@ input[type="search"] {
 .input-field input[type=search] {
 	padding-left: 10px;
 	float: right;
+	border-radius: 0px;
+	margin-top: -5px;
 }
 
 .card-margin {
@@ -138,6 +141,7 @@ input[type="search"] {
 	padding: 3px 24px 0 24px;
 	height: 40px;
 	background-color: #FF5252;
+	margin-top: -5px;
 }
 
 .btn i {
@@ -192,4 +196,8 @@ ul#nav-mobile li i {
 
 .side-nav {
 	top: 64px;
+}
+
+.btn {
+	border-radius: 0px;
 }
